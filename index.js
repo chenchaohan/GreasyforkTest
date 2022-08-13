@@ -1,19 +1,19 @@
 // ==UserScript==
 // @name         Test
-// @namespace    https://beihuolang.net
+// @namespace    https://www.beihuolang.net
 // @version      0.1
-// @description  try to take over the world!
+// @description  free copy csdn code !
 // @author       superhan
-// @match        *://*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=bilibili.com
+// @match        https://blog.csdn.net/*
+// @icon           https://g.csdnimg.cn/static/logo/favicon32.ico
 // @license      AGPL-3.0
 // @grant        none
 // ==/UserScript==
 
 (function() {
     'use strict';
-    console.log("hello superhan ")
-    // Your code here...
-    console.log("222222222")
-    console.log(333)
+    let codes = document.querySelectorAll("code");
+    codes.forEach(c=>{
+        c.contentEditable="true";
+    })
 })();
